@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="James Percival : News">
+    <link rel="stylesheet" type="text/css" media="screen"
+      href="{{ site.url | replace: 'http:', ''}}/stylesheets/stylesheet.css">
+    <title>{{ page.title }}</title>
+    {% feed_meta %}
+  </head>
+  <body>
+    {% include header.html %}
+    {% include menu.html %} 
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <hr>
+        {{ content }}
+	{% include _tags.md obj=page %}
+      </section>
+    </div>
+    {% include footer.html %}
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+  </body>
+</html>
