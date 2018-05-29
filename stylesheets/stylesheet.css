@@ -79,7 +79,6 @@ h1 {
 h2 {
   padding-bottom: 10px;
   font-size: 32px;
-  background: url('../images/bg_hr.png') repeat-x bottom;
 }
 
 h3 {
@@ -233,7 +232,6 @@ hr {
   height: 1px;
   margin-bottom: 5px;
   border: none;
-  background: url('../images/bg_hr.png') repeat-x center;
 }
 
 table {
@@ -269,7 +267,7 @@ Full-Width Styles
 
 .inner {
   position: relative;
-  max-width: 640px;
+  max-width: 900px;
   padding: 20px 10px;
   margin: 0 auto;
 }
@@ -376,12 +374,22 @@ Full-Width Styles
 }
 
 #main_content {
-  padding-top: 40px;
-  padding-left: 160px;
+  padding-top: 0px;
+  padding-left: 10px;
 }
 
 #footer_wrap {
   background: rgba(255,165,0,0.25);
+  text-align: right;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  height: 30px;
+  padding: 0;
+}
+
+#footer_wrap .inner {
+    padding: 5px;
 }
 
 
@@ -484,7 +492,7 @@ Small Device Styles
 
 #menu a:hover, #menu a:active {
     color: White;
-    background-color: rgba(255,165,0,0.25);
+    background-color: rgba(255,165,0,0.75);
 }
 
 #tags a:link, #tags a:visited {
